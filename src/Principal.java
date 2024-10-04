@@ -1,9 +1,13 @@
+import br.com.alura.screenmatch.models.Filme;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "God Of War";
-        meuFilme.anoDeLancamento = 2025;
-        meuFilme.duracaoEmMinutos = 180;
+        meuFilme.setNome("God Of War");
+
+        meuFilme.setAnoDeLancamento(2025);
+        meuFilme.setDuracaoEmMinutos(120);
+        meuFilme.setIncluidoNoPlano(true);
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
