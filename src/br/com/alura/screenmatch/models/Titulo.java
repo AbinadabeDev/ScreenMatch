@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.models;
 
-public class Titulo {
+import br.com.alura.screenmatch.calculos.Classificavel;
+
+public class Titulo implements Classificavel {
     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
@@ -45,5 +47,10 @@ public class Titulo {
     }
     public double obterMedia(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
+
+    @Override
+    public int getClassificacao() {
+        return 0;
     }
 }
