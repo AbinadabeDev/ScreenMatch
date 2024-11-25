@@ -19,7 +19,7 @@ public class Titulo implements Classificavel {
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
-    public boolean isIncluidoNoPlano() {
+    public boolean IncluidoNoPlano() {
         return incluidoNoPlano;
     }
     public int getDuracaoEmMinutos() {
@@ -38,7 +38,7 @@ public class Titulo implements Classificavel {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
     public void exibeFichaTecnica(){
-        System.out.println("Nome do filme: " + nome);
+        System.out.println("Nome: " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);
     }
     public void avalia(double nota){
